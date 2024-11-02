@@ -1,0 +1,57 @@
+{
+    "screens": [
+      {
+        "id": 1,
+        "backgroundImage": "/img/bg-redes.svg",
+        "hexagons": [
+          {
+            "id": "1",
+            "label": "Proyecto 1"
+          },
+          {
+            "id": "2",
+            "label": "Proyecto 2"
+          },
+          {
+            "id": "3",
+            "label": "Proyecto 3"
+          },
+          {
+            "id": "4",
+            "label": ""
+          },
+          {
+            "id": "5",
+            "label": "Proyecto 4"
+          },
+          {
+            "id": "6",
+            "label": "Proyecto 5"
+          },
+          {
+            "id": "flujogramas",
+            "label": "Flujogramas"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "backgroundImage": "img/bg-redes.svg",
+        "hexagons": [
+          {
+            "id": "flujogramas",
+            "label": "Flujogramas"
+          },
+          {
+            "id": "revision",
+            "label": "Revisión de diseño"
+          },
+          {
+            "id": "diseno",
+            "label": "Diseño y construcción de redes internas"
+          }
+        ]
+      }
+    ]
+  }
+  

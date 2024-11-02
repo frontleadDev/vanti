@@ -10,6 +10,20 @@ export interface DistritosData {
     sections: Section[];
 }
 
-export interface ModalProps{
-    url:string;
+export interface ModalProps {
+    url: string;
+}
+export interface Hexagon {
+    id: string;
+    label: string;
+}
+
+export interface Screen {
+    id: number;
+    backgroundImage: string;
+    hexagons: Hexagon[];
+}
+
+export interface Redes {
+    screens: Screen[];
 }

@@ -1,5 +1,5 @@
 
-import { DistritosData, ModalProps } from "../../global/interface";
+import { DistritosData } from "../../global/interface";
 import { useEffect, useState } from "react";
 import { fetchDistritosData } from './callApi'
 import Modal from '../../components/modal/Modal'
