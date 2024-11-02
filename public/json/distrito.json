@@ -1,0 +1,24 @@
+{   
+    "background_img":"/img/bg.svg",
+    "title": "DISTRITOS TÉRMICOS",
+    "subtitle": "/img/logo_central.svg",
+    "sections": [
+      {
+        "name": "¿Qué son los distritos térmicos?",
+        "link": "https://www.youtube.com/watch?v=97xzve-Nt5o"
+      },
+      {
+        "name": "Tipos de distritos",
+        "link": "https://www.youtube.com/watch?v=kW5Esx8Z-Lo"
+      },
+      {
+        "name": "Proyectos Kronus y Lift",
+        "link": "https://www.youtube.com/watch?v=TPw8ajxOoOo"
+      },
+      {
+        "name": "Ventajas distritos térmicos",
+        "link": "https://www.youtube.com/watch?v=wTePVj-hYOQ"
+      }
+    ]
+  }
+  

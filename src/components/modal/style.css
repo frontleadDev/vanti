@@ -1,0 +1,90 @@
+.container-modal {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+.container-modal::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.container-modal .content-video {
+  z-index: 1;
+}
+.container-modal .content-video iframe {
+  height: 100%;
+}
+.container-modal .button-close {
+  top: 1vw;
+  right: 1vw;
+  z-index: 1;
+  background-color: white;
+  border-radius: 5px;
+}
+.container-modal .button-close.item {
+  position: absolute;
+  width: 2.60416vw;
+  height: 2.60416vw;
+}
+.container-modal .button-close.item:before, .container-modal .button-close.item:after {
+  content: "";
+  position: absolute;
+  height: 0.15vw;
+  width: 50%;
+  background-color: #502c94;
+  transition: width 0.2s ease-out;
+}
+.container-modal .button-close.item:before {
+  transform: rotate(45deg);
+  left: 7px;
+  top: 7px;
+  transform-origin: left;
+}
+.container-modal .button-close.item:after {
+  transform: rotate(-45deg);
+  right: 7px;
+  top: 7px;
+  transform-origin: right;
+}
+.container-modal .button-close.item .inner {
+  color: #502c94;
+}
+.container-modal .button-close.item .inner:before, .container-modal .button-close.item .inner:after {
+  content: "";
+  position: absolute;
+  height: 0.15vw;
+  width: 50%;
+  background-color: #502c94;
+  transition: width 0.2s ease-out;
+}
+.container-modal .button-close.item .inner:before {
+  transform: rotate(45deg);
+  transform-origin: right;
+  bottom: 6px;
+  right: 8px;
+}
+.container-modal .button-close.item .inner:after {
+  transform: rotate(-45deg);
+  transform-origin: left;
+  bottom: 6px;
+  left: 8px;
+}
+.container-modal .button-close.item .label {
+  opacity: 0;
+  transition: all 0.2s ease-out;
+  font-family: var(--font-geist-mulishBlack);
+  font-size: 0.7vw;
+  font-weight: 700;
+}
+.container-modal .button-close.item:focus:before, .container-modal .button-close.item:focus:after, .container-modal .button-close.item:hover:before, .container-modal .button-close.item:hover:after {
+  width: 10px;
+}
+.container-modal .button-close.item:focus .inner:before, .container-modal .button-close.item:focus .inner:after, .container-modal .button-close.item:hover .inner:before, .container-modal .button-close.item:hover .inner:after {
+  width: 10px;
+}
+.container-modal .button-close.item:focus .label, .container-modal .button-close.item:hover .label {
+  opacity: 1;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,11 @@
+#header {
+  position: fixed;
+  top: 4.6875vw;
+  right: 5vw;
+  z-index: 1;
+  width: 15.7291666667vw;
+}
+#header img {
+  width: 100%;
+  height: auto;
+}/*# sourceMappingURL=style.css.map */
