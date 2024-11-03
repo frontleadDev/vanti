@@ -63,6 +63,7 @@
         height: 20.625vw;
         width: 32.634%;
         transition: all 1.5s ease;
+        cursor: pointer;
         &:not(#item--1, #item--2) {
           margin-top: -9%;
         }
@@ -159,6 +160,7 @@
             position: absolute;
             width: 100%;
             height: 100%;
+            z-index: 99;
           }
           .content-info {
             display: flex;

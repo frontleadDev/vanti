@@ -58,7 +58,7 @@ export default function Redes() {
               className='conatiner-redes__general__items--item second-list'
               id={`second-list-item--${index + 1}`}
             >
-              <a href={item.link_pdf}></a>
+              <a href={item.link_pdf} target='blank'></a>
               <div className='conatiner-redes__general__items--item__content-info content-info'>
                 <h4 className='conatiner-redes__general__items--item__content-info__title'>{item.label.split('/').map((part, idx)=>(
                   <span key={idx} className={`span--${idx+1}`}>{part}</span>
