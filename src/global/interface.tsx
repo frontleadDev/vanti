@@ -16,6 +16,8 @@ export interface ModalProps {
 export interface Hexagon {
     id: string;
     label: string;
+    link?: string;
+    link_pdf?: string;
 }
 
 export interface Screen {

@@ -6,31 +6,37 @@
         "hexagons": [
           {
             "id": "1",
-            "label": "Proyecto 1"
+            "label": "Proyecto 3",
+            "link": "https://www.youtube.com/watch?v=DtuFXbXIN8E"
           },
           {
             "id": "2",
-            "label": "Proyecto 2"
+            "label": "Proyecto 4",
+            "link": "https://www.youtube.com/watch?v=DtuFXbXIN8E"
           },
           {
             "id": "3",
-            "label": "Proyecto 3"
+            "label": "Proyecto 1",
+            "link": "https://www.youtube.com/watch?v=DtuFXbXIN8E"
           },
           {
             "id": "4",
             "label": ""
           },
           {
+            "id": "flujogramas",
+            "label": "Flujogramas",
+            "link": "second-view"
+          },
+          {
             "id": "5",
-            "label": "Proyecto 4"
+            "label": "Proyecto 2",
+            "link": "https://www.youtube.com/watch?v=DtuFXbXIN8E"
           },
           {
             "id": "6",
-            "label": "Proyecto 5"
-          },
-          {
-            "id": "flujogramas",
-            "label": "Flujogramas"
+            "label": "Proyecto 5",
+            "link": "https://www.youtube.com/watch?v=DtuFXbXIN8E"
           }
         ]
       },
@@ -39,16 +45,14 @@
         "backgroundImage": "img/bg-redes.svg",
         "hexagons": [
           {
-            "id": "flujogramas",
-            "label": "Flujogramas"
-          },
-          {
             "id": "revision",
-            "label": "Revisión de diseño"
+            "label": "Revisión /de diseño",
+            "link_pdf": "https://apps.grupovanti.com/biblioteca/wp-content/uploads/2020/06/Arquitecturaeingenieri%CC%81adelgasnaturalV123112017.pdf"
           },
           {
             "id": "diseno",
-            "label": "Diseño y construcción de redes internas"
+            "label": "Diseño y construcción de redes internas",
+            "link_pdf": "https://apps.grupovanti.com/biblioteca/wp-content/uploads/2020/06/Arquitecturaeingenieri%CC%81adelgasnaturalV123112017.pdf"
           }
         ]
       }
