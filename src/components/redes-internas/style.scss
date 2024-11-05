@@ -55,6 +55,10 @@
           // z-index: 99;
           pointer-events: all;
         }
+        #second-list-item--2{
+          // z-index: 99;
+          pointer-events: all;
+        }
       }
       &.second-list {
         opacity: 0;
@@ -199,6 +203,8 @@
           bottom: 0;
           left: 14vw;
           background: url("/img/Hexagono_Blue.png") center/contain no-repeat;
+          pointer-events: none;
+
           .content-info {
             padding: 0 9%;
           }
