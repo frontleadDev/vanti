@@ -7,7 +7,9 @@ export default function Redes() {
   const [data, setData] = useState<Redes | null>(null);
   const [showSecondView, setShowSecondView] = useState(false)
   const [isVisible, setIsVisible] = useState(false);
+  const [isVisiblePdf, setIsVisiblePdf] = useState(false);
   const [urlLink, setUrlLink] = useState('')
+  const [urlLinkPdf, setUrlLinkPdf] = useState('')
 
   useEffect(() => {
     const getData = async () => {
@@ -16,11 +18,22 @@ export default function Redes() {
     }
     getData()
   }, [])
+
   const functionModal = (url: string) => {
-    if (url !== 'second-view') {
+    if (url && url !== 'second-view') {
       setIsVisible(!isVisible)
       setUrlLink(url)
     }
+  }
+  const funcionModalPdf = (url: string)=>{
+    // if (url !== 'close'){
+      if (url === 'close') {
+        setIsVisiblePdf(false);
+      } else {
+        setUrlLinkPdf(url);
+        setIsVisiblePdf(true);
+      }
+    // }
   }
   const renderTwo = () => {
     setShowSecondView(!showSecondView)
@@ -42,8 +55,17 @@ export default function Redes() {
             </li>
           ))}
           {isVisible && (
-            <div className="container-modal"><Modal url={urlLink} />
+            <div className="container-modal"><Modal url={urlLink} isVisible={false}/>
               <button onClick={() => { functionModal('close') }} className="fixed button-close item">
+                <span className="inner">
+                  <span className="label">Cerrar</span>
+                </span>
+              </button>
+            </div>
+          )}
+          {isVisiblePdf && (
+            <div className="container-modal"><Modal url={urlLink} isVisible={true}/>
+              <button onClick={() => { funcionModalPdf('close') }} className="fixed button-close item">
                 <span className="inner">
                   <span className="label">Cerrar</span>
                 </span>
@@ -55,8 +77,8 @@ export default function Redes() {
               className='conatiner-redes__general__items--item second-list'
               id={`second-list-item--${index + 1}`}
               key={index}
+              onClick={() => item.link_pdf && funcionModalPdf(item.link_pdf)}
             >
-              <a href={item.link_pdf} target='blank'></a>
               <div className='conatiner-redes__general__items--item__content-info content-info'>
                 <h4 className='conatiner-redes__general__items--item__content-info__title'>{item.label.split('/').map((part, idx)=>(
                   <span key={idx} className={`span--${idx+1}`}>{part}</span>
@@ -64,6 +86,7 @@ export default function Redes() {
               </div>
             </li>
           ))}
+          {isVisiblePdf &&(<Modal url={urlLinkPdf} isVisible={isVisiblePdf}/>)}
         </ul>
         {showSecondView && (<button className='conatiner-redes__general__button' onClick={renderTwo}></button>)}
       </div>

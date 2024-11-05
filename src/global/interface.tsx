@@ -12,6 +12,7 @@ export interface DistritosData {
 
 export interface ModalProps {
     url: string;
+    isVisible?: boolean; 
 }
 export interface Hexagon {
     id: string;
