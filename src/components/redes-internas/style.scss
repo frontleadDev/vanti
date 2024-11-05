@@ -51,6 +51,9 @@
             }
           }
         }
+        #second-list-item--1{
+          z-index: 99;
+        }
       }
       &.second-list {
         opacity: 0;
@@ -179,6 +182,7 @@
           position: absolute;
           top: calc(5vw + 7.65625vw);
           left: calc(23vw + 1.66666666vw);
+          z-index: -99;
           h4 {
             display: flex;
             flex-direction: column;

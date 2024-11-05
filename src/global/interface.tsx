@@ -29,3 +29,16 @@ export interface Screen {
 export interface Redes {
     screens: Screen[];
 }
+
+export interface Home_link {
+    url: string;
+    title: string;
+  }
+  
+ export interface Home {
+    logo: string;
+    background_img: string;
+    link1: Home_link;
+    link2: Home_link;
+  }
+  

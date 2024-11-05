@@ -1,0 +1,12 @@
+{
+    "logo": "/img/logo_vanti.svg",
+    "background_img": "/img/bg.svg",
+    "link1": {
+        "url": "/redes-internas",
+        "title": "Redes Internas"
+    },
+    "link2": {
+        "url": "/distri-termn",
+        "title": "Distritos Termicos"
+    }
+}

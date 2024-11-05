@@ -7,17 +7,17 @@
           {
             "id": "1",
             "label": "Proyecto 3",
-            "link": "https://www.youtube.com/watch?v=DtuFXbXIN8E"
+            "link": "https://www.youtube.com/watch?v=J9F00BuL_mw"
           },
           {
             "id": "2",
             "label": "Proyecto 4",
-            "link": "https://www.youtube.com/watch?v=DtuFXbXIN8E"
+            "link": "https://www.youtube.com/watch?v=d7r34o3_xik"
           },
           {
             "id": "3",
             "label": "Proyecto 1",
-            "link": "https://www.youtube.com/watch?v=DtuFXbXIN8E"
+            "link": "https://www.youtube.com/watch?v=HOAFWekgNCM"
           },
           {
             "id": "4",
@@ -31,7 +31,7 @@
           {
             "id": "5",
             "label": "Proyecto 2",
-            "link": "https://www.youtube.com/watch?v=DtuFXbXIN8E"
+            "link": "https://www.youtube.com/watch?v=xwFqBzhV25k"
           },
           {
             "id": "6",
@@ -47,12 +47,12 @@
           {
             "id": "revision",
             "label": "Revisión /de diseño",
-            "link_pdf": "https://apps.grupovanti.com/biblioteca/wp-content/uploads/2020/06/Arquitecturaeingenieri%CC%81adelgasnaturalV123112017.pdf"
+            "link_pdf": "/pdf/multimedia-1.pdf"
           },
           {
             "id": "diseno",
             "label": "Diseño y construcción de redes internas",
-            "link_pdf": "https://apps.grupovanti.com/biblioteca/wp-content/uploads/2020/06/Arquitecturaeingenieri%CC%81adelgasnaturalV123112017.pdf"
+            "link_pdf": "/pdf/multimedia-2.pdf"
           }
         ]
       }
