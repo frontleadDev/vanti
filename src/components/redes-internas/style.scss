@@ -12,6 +12,7 @@
       height: 100%;
       position: relative;
       padding-top: 1.197916vw;
+      margin-bottom: 5%;
       &.second-view {
         .conatiner-redes__general__items--item {
           &:not(.flujogramas, .second-list) {
@@ -222,6 +223,14 @@
             transform: scale(1);
         }
       }
+    }
+    &__button{
+      position: absolute;
+      width: 6.09375vw;
+      height: 6.6145833vw;
+      background: url('/img/arrow.svg') center/contain no-repeat;
+      top: calc(100vh - 6.6145833vw - 2.3958333vw);
+      left: 2.4479167vw;
     }
   }
 }

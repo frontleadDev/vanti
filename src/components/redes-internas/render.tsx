@@ -16,9 +16,6 @@ export default function Redes() {
     }
     getData()
   }, [])
-  const handleClick = () => {
-    setShowSecondView(!showSecondView);
-  };
   const functionModal = (url: string) => {
     if (url !== 'second-view') {
       setIsVisible(!isVisible)
@@ -57,6 +54,7 @@ export default function Redes() {
             <li
               className='conatiner-redes__general__items--item second-list'
               id={`second-list-item--${index + 1}`}
+              key={index}
             >
               <a href={item.link_pdf} target='blank'></a>
               <div className='conatiner-redes__general__items--item__content-info content-info'>
@@ -67,10 +65,7 @@ export default function Redes() {
             </li>
           ))}
         </ul>
-        {/* <ul className={`conatiner-redes__general__items second-list ${showSecondView ? 'active' : ''}`}>
-
-        </ul> */}
-
+        {showSecondView && (<button className='conatiner-redes__general__button' onClick={renderTwo}></button>)}
       </div>
     </div>
   )

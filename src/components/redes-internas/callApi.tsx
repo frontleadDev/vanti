@@ -6,7 +6,7 @@ export const fetchRedes = async (): Promise<Redes | null> => {
         const response = await axios.get<Redes>(`${process.env.NEXT_PUBLIC_URL_API}/json/redes.json`)
         return response.data
     }catch(error){
-        console.log('error')
+        console.log('Error: '+error)
         return null
     }
 }

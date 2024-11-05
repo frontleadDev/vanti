@@ -3,14 +3,10 @@ import { DistritosData } from "../../global/interface";
 import { useEffect, useState } from "react";
 import { fetchDistritosData } from './callApi'
 import Modal from '../../components/modal/Modal'
-import { motion, AnimatePresence } from "framer-motion";
 import './style.scss';
 import Image from "next/image";
 
-type SearchParamProps = {
-  searchParams: Record<string, string> | null | undefined;
-};
-export default function DistriTermn({ searchParams }: SearchParamProps) {
+export default function DistriTermn() {
   const [data, setData] = useState<DistritosData | null>(null);
   const [isVisible, setIsVisible] = useState(false);
   const [urlLink, setUrlLink] = useState('')

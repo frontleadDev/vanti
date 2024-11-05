@@ -1,12 +1,12 @@
 'use client'
 import DistriTermn from '../../components/distri-termn/render'
-type PageProps = {
-    searchParams: Record<string, string> | undefined;
-};
-export default function Page({ searchParams }: PageProps) {
+// type PageProps = {
+//     searchParams: Record<string, string> | undefined;
+// };
+export default function Page() {
     return (
         <>
-             <DistriTermn searchParams={searchParams} />
+             <DistriTermn />
         </>
     );
 }
