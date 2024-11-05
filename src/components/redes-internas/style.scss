@@ -52,7 +52,8 @@
           }
         }
         #second-list-item--1{
-          z-index: 99;
+          // z-index: 99;
+          pointer-events: all;
         }
       }
       &.second-list {
@@ -182,7 +183,8 @@
           position: absolute;
           top: calc(5vw + 7.65625vw);
           left: calc(23vw + 1.66666666vw);
-          z-index: -99;
+          // z-index: -99;
+          pointer-events: none;
           h4 {
             display: flex;
             flex-direction: column;

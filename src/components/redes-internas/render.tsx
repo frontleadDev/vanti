@@ -26,14 +26,8 @@ export default function Redes() {
     }
   }
   const funcionModalPdf = (url: string)=>{
-    // if (url !== 'close'){
-      if (url === 'close') {
-        setIsVisiblePdf(false);
-      } else {
         setUrlLinkPdf(url);
-        setIsVisiblePdf(true);
-      }
-    // }
+        setIsVisiblePdf(!isVisiblePdf);
   }
   const renderTwo = () => {
     setShowSecondView(!showSecondView)
@@ -56,7 +50,7 @@ export default function Redes() {
           ))}
           {isVisible && (
             <div className="container-modal"><Modal url={urlLink} isVisible={false}/>
-              <button onClick={() => { functionModal('close') }} className="fixed button-close item">
+              <button onClick={() => { setIsVisible(!isVisible)}} className="fixed button-close item">
                 <span className="inner">
                   <span className="label">Cerrar</span>
                 </span>
@@ -64,8 +58,8 @@ export default function Redes() {
             </div>
           )}
           {isVisiblePdf && (
-            <div className="container-modal"><Modal url={urlLink} isVisible={true}/>
-              <button onClick={() => { funcionModalPdf('close') }} className="fixed button-close item">
+            <div className="container-modal"><Modal url={urlLinkPdf} isVisible={true}/>
+              <button onClick={() => { setIsVisiblePdf(!isVisiblePdf) }} className="fixed button-close item">
                 <span className="inner">
                   <span className="label">Cerrar</span>
                 </span>
